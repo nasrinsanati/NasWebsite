@@ -117,6 +117,10 @@ main {
     width: 100%;
     bottom: 0;
     height: 30px;
+    font-size: 10px;
+    display: flex; /* Use flexbox for better alignment */
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
 }
 
 .logo {
@@ -125,4 +129,9 @@ main {
     vertical-align: middle; /* Aligns logo with text */
     margin-right: 10px; /* Adds spacing between the logos */
     transition: transform 0.3s ease; /* Optional: Adds a hover effect */
+}
+
+.site-footer p {
+    margin: 0; /* Remove default margin */
+    line-height: 30px; /* Match the height of the footer */
 }
