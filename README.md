@@ -15,7 +15,7 @@
 
    ## Usage
 
-   Feel free to explore the code for educational purposes and personal inspiration. Contributions to its improvement are welcome, considering the aforementioned legal constraints.
+   The primary aim of this project is to assist students in learning web design. I've provided detailed comments on the more complex sections of the code to aid your understanding. Feel free to explore the code for educational or inspirational purposes. Contributions to enhance the project are welcome, while keeping in mind the legal constraints mentioned above.
 
    ## Contact
 
