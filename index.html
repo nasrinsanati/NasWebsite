@@ -40,12 +40,18 @@
     </main>
 
     <footer class="site-footer">
-        <a href="https://www.linkedin.com/in/nasrinsanati1991/" target="_blank">
-            <img src="inlogo.png" alt="LinkedIn Logo" class="logo" />
-        </a>
-        <a href="mailto:nasrinsanati1991@gmail.com">
-            <img src="gmail.png" alt="Gmail Logo" class="logo" />
-        </a> 
+      <a href="https://www.linkedin.com/in/nasrinsanati1991/" target="_blank">
+        <img src="inlogo.png" alt="LinkedIn Logo" class="logo" />
+      </a>
+      <a href="mailto:nasrinsanati1991@gmail.com">
+        <img src="gmail.png" alt="Gmail Logo" class="logo" />
+      </a>
+      <p>&copy; <span id="year"></span> wildrosegraphee. All rights are reserved.</p>
     </footer>
+
+    <script>
+      // Automatically update the year
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
