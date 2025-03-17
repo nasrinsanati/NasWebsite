@@ -10,6 +10,9 @@ body {
 
 body.about-page {
     position: relative; /* Required for pseudo-element positioning */
+    min-height: 100vh; /* Ensure the body covers the full viewport height */
+    display: flex;
+    flex-direction: column;
 }
 
 body.about-page::before {
@@ -28,6 +31,21 @@ body.about-page::before {
     z-index: -1; /* Send the pseudo-element behind the content */
 }
 
+/* Media Query for Minimized Screen (e.g., mobile devices) */
+@media (max-width: 768px) {
+    body.about-page::before {
+        background-blend-mode: overlay; /* Blend the gradient with the image */
+        background-image: linear-gradient(45deg, rgba(255, 154, 158, 0.7), rgba(250, 208, 196, 0.7)), url('me.JPG'); /* Merge gradient with image */
+    }
+}
+
+/* Media Query for Maximized Screen (e.g., desktop) */
+@media (min-width: 769px) {
+    body.about-page::before {
+        background-blend-mode: multiply; /* Blend mode for desktop */
+        background-image: linear-gradient(45deg, rgba(255, 154, 158, 0.7), rgba(250, 208, 196, 0.7)), url('me.JPG'); /* Diverged gradient and image */
+    }
+}
 
 /* Header Styles */
 header {
@@ -85,6 +103,10 @@ nav ul li a {
 main {
     padding: 20px;
     margin-bottom: 60px; /* To prevent footer overlap */
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px; /* Add margin for better spacing */
 }
 
 /* Artwork Styles */
@@ -101,7 +123,7 @@ main {
 }
 
 .artwork p {
-    margin-top: 10px; /* Adds spacing between image and description */
+    margin-top: 1px; /* Adds spacing between image and description */
     font-style: italic; /* Makes the description text italic */
     font-size: 14px; /* Smaller font size */
     color: #555; /* Subtle gray color for the description */
@@ -145,14 +167,15 @@ main {
     font-size: 14px; /* Smaller font size */
     color: #555;
 }
+
 .video-container iframe {
     max-width: 100%;
     height: auto;
 }
+
 iframe {
     max-width: 100%;
     height: auto;
     border: 2px solid #ccc;
     border-radius: 10px;
-    
 }
