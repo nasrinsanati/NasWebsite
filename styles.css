@@ -135,3 +135,24 @@ main {
     margin: 0; /* Remove default margin */
     line-height: 30px; /* Match the height of the footer */
 }
+
+/* Responsive Styles */
+.video-container {
+    margin: 20px 0;
+    text-align: center;
+    margin-top: 5px; /* Adds spacing between image and description */
+    font-style: italic; /* Makes the description text italic */
+    font-size: 14px; /* Smaller font size */
+    color: #555;
+}
+.video-container iframe {
+    max-width: 100%;
+    height: auto;
+}
+iframe {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    
+}
